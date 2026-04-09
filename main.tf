@@ -7,14 +7,14 @@ module "vpc" {
   vpc_name = "my-coolest-vpc"
 }
 
-module "subnet_module" {
-  source = "./subnet"
+# module "subnet_module" {
+#   source = "./subnet"
 
-  vpc_id            = module.vpc.vpc_id
-  subnet_cidr        = "192.168.1.0/24"
-  subnet_name        = "my-coolest-subnet"
-  availability_zone = "eu-north-1a"
-}
+#   vpc_id            = module.vpc.vpc_id
+#   subnet_cidr        = "192.168.1.0/24"
+#   subnet_name        = "my-coolest-subnet"
+#   availability_zone = "eu-north-1a"
+# }
 
 # module "aws_instance_module" {
 #   source = "./ec2"
