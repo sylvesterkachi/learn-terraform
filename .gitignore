@@ -1,0 +1,14 @@
+# Terraform
+.terraform/
+terraform.tfstate*
+.terraform.lock.hcl
+
+# OS generated files
+.DS_Store
+
+# Logs
+*.log
+terraform.log
+
+# Documentation (if you want to ignore README.md)
+# README.md
